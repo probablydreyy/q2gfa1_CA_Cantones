@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+}
+#videoclip{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+nav{
+    display: flex;
+    background-color: #1900ff;
+    justify-content: space-around;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding-top: 0.99vw;
+    padding-bottom: 1.2vw;
+}
+#links a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+    margin-left: 2vw;
+}
+#title{
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: larger;
+}
+main h1{
+    padding: 1.5vw;
+    margin-top: 8.5vw;
+    font-family:  'Segoe UI', sans-serif;
+    color: rgb(0, 0, 0);
+}
+main p{
+    margin-left: 1.5vw;
+    font-family: 'Segoe UI', sans-serif;
+    color: black;
+}
+footer{
+    text-align: center;
+    position: relative;
+    bottom: -21vw;
+}
+.icon{
+    background: url(sprite3.png) no-repeat;
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+}
+#twt{
+    background-position: -66px -72px;
+}
+#fb{
+    background-position: -439px -146px;
+}
+#ig{
+    background-position: -290px -221px;;
+}
+#yt{
+    background-position:-439px -221px;
+}
+@media screen and (max-width: 600px) {
+    nav{
+        position: relative;
+        background-color: #00ffff;
+    }
+    #title{
+        background-color: red;
+        padding: 1vw;
+        color: black;
+        border-radius: 15%;
+    }
+    #links{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: #ff00c8;
+        min-width: 100vw;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    #links a{
+        color: black;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        display: block;
+    }
+    #links a:hover{
+        background-color: #ff0000; transition: .4s;
+        border-radius: 20%;
+    }
+    nav:hover #links{
+        display: block; transition: .2s;
+    }
+    nav:hover #title{
+        background-color: #003d7e; transition: .3s;
+    }
+
+}
